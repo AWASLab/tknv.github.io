@@ -11,7 +11,8 @@ categories:
 ---
 ## All android(rooted) needs SGit and Terminal Emulator.
 **On [Terminal Emulator](https://f-droid.org/repository/browse/?fdfilter=terminal&fdid=jackpal.androidterm)**
-```
+
+```bash
 su
 ssh-keygen -t rsa -C "yo_mail@foo.com"
 # /data/.ssh is ok, just enter. no need change path.
@@ -20,7 +21,7 @@ cp /data/.ssh/id_rsa /your-sdcard-path
 cp /data/.ssh/id_rsa.pub /your-sdcard-path
 ```
 Add /your-sdcard-path/id_rsa.pub at https://github.com/settings/ssh .  
-**On [SGit](https://f-droid.org/repository/browse/?fdfilter=sgit&fdid=me.sheimi.sgit) **  
+**On [SGit](https://f-droid.org/repository/browse/?fdfilter=sgit&fdid=me.sheimi.sgit)**  
 From menu *Private Keys*, add /your-sdcard-path/id_rsa .  
 Push **+**, then  
 - git@github.com:you/you.github.io.git at *Remote URL*  

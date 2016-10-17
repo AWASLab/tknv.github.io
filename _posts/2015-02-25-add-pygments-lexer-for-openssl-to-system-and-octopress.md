@@ -13,17 +13,21 @@ categories:
 - highlight
 description: making more nice octopress.
 ---
-##install to system(Debian)  
-```
+## install to system(Debian)  
+
+```bash
 sudo apt-get install python-setuptools
 sudo easy_install pygments-openssl
 ```   
-##install to octopress
-```  
+
+## install to octopress
+
+```bash  
 cd opctopress/plugins
 vim  pygments.rb
 ```
 add below.
+
 ```diff
 lang = 'objc' if lang == 'm'
 lang = 'perl' if lang == 'pl'

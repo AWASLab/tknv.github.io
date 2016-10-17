@@ -11,14 +11,14 @@ description: Your very own server that you need and able to access Android with 
 Building your own mail, sip, XMPP, carddav, caldav, git, file, rss-reader, VPN, read-it-later etc. AND PBX freeswitch with [ansible](https://github.com/ansible/ansible)  and [sovereign](https://github.com/al3x/sovereign) . Enjoy from PC browser and Android([owncloud:file](https://f-droid.org/repository/browse/?fdfilter=owncloud&fdid=com.owncloud.android) , [DAVdroid; address and calendar sync](https://f-droid.org/repository/browse/?fdfilter=owncloud&fdid=at.bitfire.davdroid), [K-9 Mail](https://f-droid.org/repository/browse/?fdfilter=K9&fdid=com.fsck.k9) ,  [Conversations; XMPP client](https://f-droid.org/repository/browse/?fdfilter=conversations&fdid=eu.siacs.conversations), [wallabag; Read-it-later client](https://f-droid.org/repository/browse/?fdfilter=wallabag&fdid=fr.gaulupeau.apps.InThePoche), [OpenVPN for Android; OpenVPN without root](https://f-droid.org/repository/browse/?fdfilter=vPN&fdid=de.blinkt.openvpn), [Sipdroid for A SIP (VOIP) client](https://f-droid.org/repository/browse/?fdfilter=sip&fdid=org.sipdroid.sipua) ).
 
 ## Set up with ubuntu14 Trusty
-```
+```bash
 sudo apt-get install ansible sshpass cowsay screen
 git clone git@github.com:al3x/sovereign.git
 cd sovereign
 patch -p1 < 2015-03-04-diff.patch
 ```
 
-```patch
+```diff
 diff --git a/roles/mailserver/tasks/dovecot.yml b/roles/mailserver/tasks/dovecot.yml
 index 639e161..0eab8bf 100644
 --- a/roles/mailserver/tasks/dovecot.yml
@@ -94,11 +94,13 @@ index 9794299..a9d00cc 100644
 ```
 
 **Prepare openssl**
-```
+
+```bash
 cp /etc/ssl/openssl.cnf roles/common/files
 ```
 
 roles/common/files/openssl.cnf
+
 ```
 #
 # OpenSSL example configuration file.
@@ -468,30 +470,37 @@ at server, add postgresql repo for 9.4.
 wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | apt-key add -
 ```
 ## Run ansible until all OK
-```
+
+```bash
 cd ~/sovereign
 screen
 ansible-playbook -i ./hosts site.yml -vvvv -k
 ```
+
 Try ansible-playbook -i ./hosts site.yml -vvvv -k until none false.
 **after ansible return error, auth error or Permission denied when restarting ansible.**  
 at server 
-```
+
+```bash
 vim /etc/pam.d/sshd
 # delete or comment out delow
 auth required pam_google_authenticator.so
 ```
 **no apache2/conf.d**  
-```
+
+```bash
 mkdir /etc/apache2/conf.d
 ```
 **no fuse group**   
-```
+
+```bash
 groupadd fuse
 ```
 ## Install Fusionpbx  
+
 at server, user as deploy. when installing process, **do not update script**.
-```
+
+```bash
 wget http://fusionpbx.googlecode.com/svn/trunk/scripts/install/ubuntu/install_fusionpbx.sh
 wget https://gist.githubusercontent.com/tknv/d9abe23372ba2d2ea9fa/raw/3390c7c339bf54b9988c1ead6e076ff924c98184/InstallFusionpbx.patch 
 patch install_fusionpbx.sh < InstallFusionpbx.patch
@@ -500,6 +509,7 @@ sudo ./install_fusionpbx.sh install-both user pbx.YOUR.DOMAIN
 ```
 or using patched script.  
 install_fusionpbx-trusty.sh
+
 ```bash
 #!/bin/bash
 
@@ -3634,6 +3644,7 @@ exit 0
 # was first cut
 
 ```
+
 Maybe it is not complete, still I got many errors on vbox.  
 
 
