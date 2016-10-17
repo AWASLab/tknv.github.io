@@ -1,0 +1,20 @@
+---
+layout: post
+title: Sync gmail, contacts and calendar with Thunderbird and Evolution
+date: '2012-02-12T03:36:00.027+09:00'
+author: tknv
+comments: true
+category:
+- offlineimap
+- Thunderbird
+- linux
+- imap
+- evolution
+- dovecot
+- google
+modified_time: '2012-02-12T03:36:00.277+09:00'
+blogger_id: tag:blogger.com,1999:blog-2736766923155041598.post-4456405258919776427
+blogger_orig_url: http://yet-another-problem.blogspot.com/2012/02/sync-gmail-contacts-and-calendar-with.html
+---
+
+<blockquote><p>There is solution for to sync gmail, contacts and calendar with Thunderbird and Evolution. But why need install that pims. We use browser already.同期にもcloud!</p></blockquote><b>some solutions</b><br />gmail -&gt; offlineimap -&gt; dovecot -&gt; Thunderbird<br />gmail -&gt; offlineimap -&gt; Evolution<br /><b>easy solution</b><br />chromium + cloud magic<br />make account at <a href="http://cloudmagic.com">cloud magic</a>.<br /><a href="http://goo.gl/6FY84">add extension</a> to chromium.<br /><br /><div style="text-align: center;"><span style="color: #6aa84f; font-family: Verdana, sans-serif; font-size: x-small;"><b>Feel free to ask at any time, please.</b></span></div>

@@ -1,0 +1,20 @@
+---
+layout: post
+title: Death Agony!!!
+date: '2010-02-05T07:33:00.011+09:00'
+author: tknv
+comments: true
+category:
+- ruby
+- skype
+- win32ole
+- autoit
+- windows
+- watir
+- test
+modified_time: '2010-02-05T08:04:20.452+09:00'
+blogger_id: tag:blogger.com,1999:blog-2736766923155041598.post-2036687888313860651
+blogger_orig_url: http://yet-another-problem.blogspot.com/2010/02/death-agony.html
+---
+
+Sometime I use many PC for automation integration testing.<br />But it is difficult to manage which one down by error.<br />So when some PC down,the PC death agony! by skype.<br />This code will death agony and vomit log.<br /><pre name='code' class='ruby'><br /># death_agony.rb<br />#! ruby -Ku<br />require 'rubygems'<br />require 'win32ole'<br />require 'kconv'<br /><br />$KCODE = 'UTF8'<br />@MACHINE = ARGV[0]<br />@GOD = ARGV[1]<br /><br />@oCom=WIN32OLE.new('AutoItX3.Control')<br />@oSkype=WIN32OLE.new('Skype4COM.skype')<br />  raise "Please start skype" @oSkype.Client.IsRunning != true<br />  <br />  death_agnoy = IO.read('errIO.txt')<br />  @oSkype.SendMessage(@GOD, "Death Agony from #{@MACHINE} at #{Time.now}\n" + death_agony)<br />  sleep(3)<br /><br />  @oUser = @oSkype.User(@GOD)<br />  @oCall = @oSkype.PlaceCall(@oUser.Handle)<br />  @oCall.Status<br /></pre><br />And catch exception in rake task(who don't use rake for testing?)<br /><pre name='code' class='ruby'><br /># rake.rb<br /># setup >(rake your_task pc=a_one_of_sacrifice p=where_to_agony) 1> errIO.txt<br />task :hell_grinder do<br />  begin<br />  ruby "death_test.rb "<br />  rescue<br />  p "ring ring ring..."<br />  ruby "death_agony.rb " + ENV['pc'] + " " + ENV['p']<br />  end<br />end<br /></pre><br />Then you can hear death agony from each sacrifice.<br />*Don't forget regsvr skype dll:<a href="https://developer.skype.com/Download?action=AttachFile&do=get&target=Skype4COM-1.0.31.0.zip">here down load link</a><br />How to regist it.<br />> regsvr32 -that skype dll-<br />Ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh........

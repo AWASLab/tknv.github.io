@@ -1,0 +1,18 @@
+---
+layout: post
+title: Gumstix Overo Fire!!!
+date: '2010-02-17T20:31:00.002+09:00'
+author: tknv
+comments: true
+category:
+- omap
+- linux
+- overo
+- gumstix
+- wifi
+modified_time: '2010-02-17T20:49:24.589+09:00'
+blogger_id: tag:blogger.com,1999:blog-2736766923155041598.post-3534395077757563421
+blogger_orig_url: http://yet-another-problem.blogspot.com/2010/02/gumstix-overo-fire.html
+---
+
+But it is not only for overo issue. I never think ANTENNA is so much important in very close range.<br />When I try check wifi chip RT2870, It is still not work completely.<br />Anyway Fire:88W8686 needs ANTENNA even 30cm radius from AP.<br /><br />And headache cross compile RT2870.<br />Change Makefile like that,Hope it will help for another too.<br />I used bitbake, So better use that tool chain for cross compile. Because bitbake already gitted kernel headers and build tool chain.<br />For example, little change RT2870's Makefile.<br />in ~/tmp/work dir there is source for build and ~/tmp/cross dir there is Tool chain.<br />But end of line should be "arm-angstrom-linux-gnueabi-", compiler will attach on that end. <br /><pre name='code' class='cpp'><br />ifeq ($(PLATFORM),PC)<br /># Linux 2.6<br />LINUX_SRC = ~/overo-oe/tmp/work/overo-angstrom-linux-gnueabi/linux-omap3-2.6.31-r51/image/lib/modules/2.6.31-omap1/build<br />LINUX_SRC_MODULE = ~/overo-oe/tmp/work/overo-angstrom-linux-gnueabi/linux-omap3-2.6.31-r51/image/lib/modules/2.6.31-omap1/kernel/drivers/net/wireless/<br />CROSS_COMPILE = /home/tknv/overo-oe/tmp/cross/armv7a/bin/arm-angstrom-linux-gnueabi-<br />endif<br /></pre><br />'HAS_WPA_SUPPLICANT=y' and 'HAS_NATIVE_WPA_SUPPLICANT_SUPPORT=n'<br />that version doesn't work in arm... still I am testing.

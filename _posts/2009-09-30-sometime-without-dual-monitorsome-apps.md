@@ -1,0 +1,15 @@
+---
+layout: post
+title: Sometime without dual monitor,some apps in that monitor.
+date: '2009-09-30T16:17:00.000+09:00'
+author: tknv
+comments: true
+category:
+- editor
+- windows
+modified_time: '2009-09-30T16:55:45.878+09:00'
+blogger_id: tag:blogger.com,1999:blog-2736766923155041598.post-5166287887328684350
+blogger_orig_url: http://yet-another-problem.blogspot.com/2009/09/sometime-without-dual-monitorsome-apps.html
+---
+
+<h2>デュアルモニターに忘れてしまって、そっち側にいる消えてしまったアプリを元に戻す方法。<br />Relocate forgotten application in dual monitor.</h2><br />アプリによりけりです、まずはグレートなアプリについて<br />It is depend on application. At first show about Greatest Application.<br /><li>The First Application</li><br /><h1><span style="font-weight:bold;"><a href="http://hp.vector.co.jp/authors/VA017297/">CAPTST28</a></span></h1><br /><blockquote>This is super capture tool.</blockquote><br />CAPTST28/Capt_st.INI<br /><pre name='code' class='ruby'><br />~some code~<br />[Window]<br />Splitter=87<br />Xpos=170  # -> This is openig posion,ここを100ぐらいにすると帰ってきます。<br />~some code~<br /></pre><br />もし、上下にモニターを拡張している人は、Yposになると思いますが、、、いるの？<br /><li>Also The First Application</li><br /><h1><span style="font-weight:bold;"><a href="http://www.asukaze.net/soft/cassava/">Cassava Editor</a></span></h1><br /><blockquote>This is super CSV editor</blockquote><br />Cassava/Cassava.ini<br /><pre name='code' class='ruby'><br />~some code~<br />[Position]<br />Mode=0<br />Left=53  # -> This is openig posion,ここを100ぐらいにすると帰ってきます。<br />Top=264<br />~some code~<br /></pre>

@@ -1,0 +1,17 @@
+---
+layout: post
+title: Error when reading rootfs
+date: '2010-04-09T16:23:00.000+09:00'
+author: tknv
+comments: true
+category:
+- linux
+- gumstix
+- embedded
+- strage
+modified_time: '2010-04-09T16:23:42.024+09:00'
+blogger_id: tag:blogger.com,1999:blog-2736766923155041598.post-9052866324269207298
+blogger_orig_url: http://yet-another-problem.blogspot.com/2010/04/error-when-reading-rootfs.html
+---
+
+Embedded linux on SD card, Hiding problems in many case as doubt.<br /><ul><li>sometime kernel could not boot</li><blockquote>Kernel panic - not syncing: No init found, Try passing init= option to kernel".</blockquote><li>sometime read SD card</li><blockquote>SD card Buffer I/O error.</blockquote><li>sometime dd command could not done</li><blockquote>read error or write error</blockquote></ul>Please consider it before doubt your embedded linux system.<br />1st,that kernel panic is evidence u-boot,grub,any boot system are maybe ok.<br />2nd,try mkfs against rootfs partition and write rootfs all again.<br />3rd,change SD card writer that using write rootfs.<br /><br />In my experience mostly SD card writer are problem.<br />Error occur while dd command, Usually SD card problem. I used many SD card even famous brand.<br />But how do you believe it?<br /><h1>There is much much illegal copy brand.</h1>It is little help to choice with R mark or not when you purchase SD card.<br />It is much case in dd command error that using without R mark SD card.<br />By the way how weak SD card...

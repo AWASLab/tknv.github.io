@@ -1,0 +1,20 @@
+---
+layout: post
+title: Archlinux Burn CD,DVD by Ultra bay
+date: '2012-03-18T14:48:00.000+09:00'
+author: tknv
+comments: true
+category:
+- archlinux
+- dvd-rom
+- Thinkpad
+- debian
+- cd-rom
+- ibm
+- X61
+modified_time: '2012-03-18T14:48:49.597+09:00'
+blogger_id: tag:blogger.com,1999:blog-2736766923155041598.post-4391523297766594499
+blogger_orig_url: http://yet-another-problem.blogspot.com/2012/03/archlinux-burn-cddvd-by-ultra-bay.html
+---
+
+<blockquote><p>cdrecord -v dev=/dev/sr0 foo.iso</p></blockquote>wodim, cdrecord -checkdrive, -scanbus ain't work. It was tested on Archlinux X61 + Ultra bay. <br /><div style="text-align: center;"><span style="color: #6aa84f; font-family: Verdana, sans-serif; font-size: x-small;"><b>Feel free to ask at any time, please.</b></span></div>

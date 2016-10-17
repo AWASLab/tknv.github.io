@@ -1,0 +1,56 @@
+---
+layout: post
+title: How to file up load
+date: '2009-06-09T17:24:00.000+09:00'
+author: w.tknv
+cover: /images/Ruby-logo.png
+comments: true
+categories:
+- ruby
+- watir
+- test
+modified_time: 'Thursday, 26. February 2015 04:25PM '
+---
+up_load.rb  
+
+```ruby
+#!/usr/bin/env ruby
+
+require 'test/unit'
+require 'rubygems'
+require 'watir'
+require 'win32ole'
+
+
+class FileUpLoadTest < Test::Unit::TestCase
+ include Watir
+
+    def test_fileup
+     ie = Watir::IE.new
+     ie.goto('foo.com/fileup.html')
+     assert(ie.file_field(:name,"register_data").exists?,message="error none file field")
+     path = "C:\\InstantRails-2.0-win\\rails_apps\\somefile.csv"  # set("#{path}")
+     ie.file_field(:id,'register_data').click_no_wait
+     # debug code check file path and sleep sec.
+     puts "#{path}"
+     puts Time.now
+     sleep(5)
+     puts Time.now
+     # debug code end
+  
+     autoit=WIN32OLE.new("AutoItX3.Control")
+     autoit.WinWait("ファイルの選択")
+     autoit.WinActivate("ファイルの選択")
+     autoit.ControlSetText("ファイルの選択", "", 1148, "#{path}")
+     autoit.Send("{ENTER}")
+
+     ie.button(:name,"btnSubmitFile").click
+     wait_until {ie.text.include? "アップロードされました。"} #rendering待ち
+     assert(ie.text.include?("アップロードされました。"),message="error import" )  #データインポートチェック
+
+     ie.close
+
+    end
+    
+end
+```
