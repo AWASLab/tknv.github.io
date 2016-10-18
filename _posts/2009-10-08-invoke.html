@@ -1,0 +1,15 @@
+---
+layout: post
+title: invoke &&
+date: '2009-10-09T00:32:00.000+09:00'
+author: tknv
+comments: true
+category:
+- ruby
+- test
+modified_time: '2009-10-09T00:48:03.823+09:00'
+blogger_id: tag:blogger.com,1999:blog-2736766923155041598.post-3942517998514179599
+blogger_orig_url: http://yet-another-problem.blogspot.com/2009/10/invoke.html
+---
+
+<h2>Stuck in && place</h2><br />1st code:When foo_text does not include 'woo',<br />      But always show "It is great movie".<br /><pre name='code' class='ruby'><br />some_str = foo_text.include?('woo') ? 'madam' : ''<br />if @jekyll_hyde.include?('one-thirty-four' && some_str)<br />  then puts "It is great movie" <br />  else puts "Please check it out again" <br />end<br /></pre><br /><br />This below code works well<br /><pre name='code' class='ruby'><br />some_str = foo_text.include?('woo') ? 'madam' : ''<br />if @jekyll_hyde.include?(some_str && 'one-thirty-four')<br />  then puts "It is great movie" <br />  else puts "Please check it out again" <br />end<br /></pre><br /><br />By the way,really good movie that is.

@@ -1,0 +1,17 @@
+---
+layout: post
+title: Best Streaming Server Solution !
+date: '2011-09-25T19:47:00.002Z'
+author: tknv
+tags:
+- music3
+- Streaming
+- mp3
+- linux
+- server
+modified_time: '2012-01-27T00:03:39.517Z'
+blogger_id: tag:blogger.com,1999:blog-11459759.post-2840817250070343492
+blogger_orig_url: http://phichyudebow.blogspot.com/2011/09/best-streaming-server-solution.html
+---
+
+<div class="posterous_autopost">I am seeking streaming server solution for live streaming then found just short 2 lines.<br />But I checked and tried some solutions before knowing it.<br /><ul><li>SHOUTCAST - Sure at first I tried it,Because many my favorit radio sites also used it. But I stacked at testing VLC,when I access it, VLC popup shows input user and password. <span style="color: red;"><strong>WHAT IS THAT ! <br /></strong></span></li><li><span style="color: red;"><span style="color: black;">Feng - It seems nice that supports many kind of format. <a href="http://lscube.org/">LScube</a> solution is nice. I would like to test more.</span></span></li><li><span style="color: red;"><span style="color: black;">icecast2 - I don't have .ogg file for test. Easy setup.</span></span></li></ul>Anyway it was too much for it and also no one supports to serve live streaming yet.<br /><blockquote><strong><span style="font-size: medium;">HERE LIVE STREAMING LINER !</span></strong> - server side</blockquote><div class="data type-text"><table cellpadding="0" cellspacing="0" class="lines"><tbody><tr> <td><pre class="line_numbers"><span id="L1" rel="#L1">1</span> <span id="L2" rel="#L2">2</span> </pre></td> <td width="100%"><div class="highlight"><pre><div class="line" id="LC1">esdrec | lame - - &gt; archive.mp3</div><div class="line" id="LC2">tcpserver 0 9940 tail -f archive.mp3</div></pre></div></td> </tr></tbody></table></div>that's all.<br /><blockquote class="posterous_short_quote">client side</blockquote><div class="data type-text"><table cellpadding="0" cellspacing="0" class="lines"><tbody><tr> <td><pre class="line_numbers"><span id="L1" rel="#L1">1</span> </pre></td> <td width="100%"><div class="highlight"><pre><div class="line" id="LC1">mconnect foo.com 9940 | mpg123 -</div></pre></div></td> </tr></tbody></table></div><a href="http://man.he.net/man1/esdrec">esdrec</a>: outputs from the sound device's current input.<br />&nbsp; i.e.) shout on mic, vlc play music and maybe beep etc all you can record it.<br /><a href="http://lame.sourceforge.net/">lame</a>: encoder<br /><a href="http://cr.yp.to/ucspi-tcp/mconnect.html">mconnect</a>: connect to SMTP mail server socket<br /><a href="http://cr.yp.to/ucspi-tcp/tcpserver.html">tcpserver</a>: tcp server<br /><a href="http://www.mpg123.de/">mpg123</a>: Fast console MPEG Audio Player and decoder library<br /><br />This Best Streaming Server Solution author is <a href="http://www.aaronsw.com/">http://www.aaronsw.com/</a><br />This article from <a href="http://www.aaronsw.com/2002/howto/stream">http://www.aaronsw.com/2002/howto/stream</a><br /><br /><h3 style="clear: left; color: #990000; font-size: 28px;"><a href="http://act.demandprogress.org/sign/facebook_political/">Tell Facebook: Stop Censoring Political Speech</a></h3></div><div class="blogger-post-footer">/TKNV</div>

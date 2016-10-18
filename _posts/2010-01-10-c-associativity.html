@@ -1,0 +1,15 @@
+---
+layout: post
+title: C++ Associativity
+date: '2010-01-10T12:44:00.000+09:00'
+author: tknv
+comments: true
+category:
+- c++
+- linux
+modified_time: '2010-01-10T13:02:41.806+09:00'
+blogger_id: tag:blogger.com,1999:blog-2736766923155041598.post-444306148263543364
+blogger_orig_url: http://yet-another-problem.blogspot.com/2010/01/c-associativity.html
+---
+
+When reading c++ code, find interesting.<br />If input 0 then num1 is 5 else num1 is input number.<br /><pre name="code" class="c++"><br />#include    <iostream><br /><br />     int<br /> main ( )<br /> {<br />     int num1;<br />     std::cin >> num1;<br />     num1 || (num1 = 5);<br />     std::cout << num1 << std::endl;<br />     return 0;<br /> }<br /></pre><br /><br />If input 0 then num1 is 0 else num1 is always 5.<br /><pre name="code" class="c++"><br />#include    <iostream><br /><br />     int<br /> main ( )<br /> {<br />     int num1;<br />     std::cin >> num1;<br />     num1 && (num1 = 5);<br />     std::cout << num1 << std::endl;<br />     return 0;<br /> }<br /></pre><br />interesting.

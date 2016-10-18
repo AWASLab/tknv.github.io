@@ -1,0 +1,16 @@
+---
+layout: post
+title: Explotion Data, GC for git object
+date: '2012-02-01T15:23:00.000+09:00'
+author: tknv
+comments: true
+category:
+- one_liner
+- git
+- garbage-collection
+modified_time: '2012-02-01T23:53:26.440+09:00'
+blogger_id: tag:blogger.com,1999:blog-2736766923155041598.post-6732853340166155261
+blogger_orig_url: http://yet-another-problem.blogspot.com/2012/02/explotion-data-gc-for-git-object.html
+---
+
+<span style="font-family: 'Trebuchet MS', sans-serif; font-size: x-large;"><b>!Bash</b></span><br />溜り貯り堪り過ぎで肥大しすぎた、git objectをdiet!<br /><script src="https://gist.github.com/1716642.js?file=one_liner_gc-for-git"></script>

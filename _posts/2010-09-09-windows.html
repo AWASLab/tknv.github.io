@@ -1,0 +1,16 @@
+---
+layout: post
+title: 眠い、windowsのサーバはホント触りたくない、意味が分からない事が多すぎ
+date: '2010-09-09T08:47:00.001Z'
+author: tknv
+tags:
+- windows7
+- windows
+- server
+- summer
+modified_time: '2010-09-09T08:48:10.912Z'
+blogger_id: tag:blogger.com,1999:blog-11459759.post-1552402046849072092
+blogger_orig_url: http://phichyudebow.blogspot.com/2010/09/windows.html
+---
+
+盆休み、まだ、とれない。<br />もう、盆も終わって、夏でもなくなり、あーあ。<br />暖かい、ところで休みたい。<br /><br />---- windows7 delete service ----<br />C:\Windows\Microsoft.NET\Framework\v2.0.50727>sc.exe delete FooService<br />[SC] OpenService FAILED 5:<br /><br />アクセスが拒否されました。<br /><br />then<br /><br />C:\Windows\System32\cmd.exeを管理者で開いて、同様におこなうと、SUCCESS<br /><br />--------------------------<br />'/FOO_web' アプリケーションでサーバー エラーが発生しました。<br />--------------------------------------------------------------------------------<br /><br />パーサー エラー <br />説明: この要求の処理に必要なリソースの解析中にエラーが発生しました。以下の解析エラーの詳細を確認し、ソースファイルに変更を加えてください。 <br /><br />パーサー エラー メッセージ: アセンブリ 'App_Web_Foo' を読み込めませんでした。ページにアクセスする前にアセンブリがコンパイルされているかどうか確認してください。<br /><br />ソース エラー: <br /><br /><br />行 1:  <%@ page language="C#" autoeventwireup="true" inherits="Login, App_Web_Foo" %><br />行 2:  <br />行 3:  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><br /><br /><br />ソース ファイル: /FOO_web/Login.aspx    行: 1 <br /><br /><br />--------------------------------------------------------------------------------<br />バージョン情報: Microsoft .NET Framework バージョン:2.0.50727.4927; ASP.NET バージョン:2.0.50727.4927 <br /><br />------------------<br />/bin/App_Web_Foo.dllがあるか確かめる、なければ、正しいdllを指定。<div class="blogger-post-footer">/TKNV</div>

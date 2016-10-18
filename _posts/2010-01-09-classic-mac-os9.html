@@ -1,0 +1,18 @@
+---
+layout: post
+title: Classic Mac Os9 のスクリーン画像の変換
+date: '2010-01-10T00:06:00.000+09:00'
+author: tknv
+comments: true
+category:
+- osX
+- graphic
+- windows
+- os9
+- mac
+modified_time: '2010-01-10T00:17:04.446+09:00'
+blogger_id: tag:blogger.com,1999:blog-2736766923155041598.post-126439732788724831
+blogger_orig_url: http://yet-another-problem.blogspot.com/2010/01/classic-mac-os9.html
+---
+
+<blockquote>Os9の過去のデザインデータをぱぱっと、キャプチャ撮って、集めておこうとしたところ、Classic Macのスクリーンキャプチャの画像ファイルってOS Xでも、もちろんwinでも、linuxでも、開けず、参ってしまった。<br></blockquote><br /><a href="http://www.remus.dti.ne.jp/~yoshiki/PixelCat/">PixelCat、</a>これを発見。便利です。<h2>Yoshiki Kojimaさん、ありがとうございます。</h2><br><br />で、さらに、変換したのは、いいけど、大きさがバラバラなんで、一括変換する便利なものを発見。<br><br /><a href="http://my.reset.jp/~triton/">リサイズ超簡単！Pro、</a>便利です。使い易いです。<h2>Kazuo Chibaさん、ありがとうございます。</h2><br>

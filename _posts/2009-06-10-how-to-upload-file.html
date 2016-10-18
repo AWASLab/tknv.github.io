@@ -1,0 +1,54 @@
+---
+layout: post
+title: How to down load file.
+date: '2009-06-10T17:48:00.000+09:00'
+author: tknv
+cover: /images/Ruby-logo.png
+comments: true
+category:
+- ruby
+- watir
+- test
+modified_time: 'Thursday, 26. February 2015 05:17PM '
+blogger_id: tag:blogger.com,1999:blog-2736766923155041598.post-7984976080074627153
+blogger_orig_url: http://yet-another-problem.blogspot.com/2009/06/how-to-upload-file.html
+---
+```ruby
+#!/usr/bin/env ruby
+
+require 'test/unit'
+require 'rubygems'
+require 'watir'
+require 'win32ole'
+
+
+
+class FileUpLoadTest < Test::Unit::TestCase
+ include Watir
+
+    def test_fileup
+     ie = Watir::IE.new
+     ie.goto('foo.com/fileup.html')
+     assert(ie.file_field(:name,"register_data").exists?,message="error none file field")
+
+#Start down load
+     ie.file_field(:id,'register_data').click_no_wait   
+# should click_no_wait,otherwise wait forever behind modal window. 
+ 
+     windwName_dwn = "ファイルのダウンロード"
+     windwName_sve = "名前を付けて保存"
+     autoit=WIN32OLE.new("AutoItX3.Control")
+     autoit.WinWait(windwName_dwn)
+     autoit.WinActivate(windwName_dwn)
+     autoit.ControlClick(windwName_dwn,"","[CLASS:Button;INSTANCE:2]")
+     pathAndName = "var/foo.txt"
+     autoit.WinWait(windwName_sv)
+     autoit.WinActivate(windwName_sv)
+     autoit.ControlSetText(windwName_sv, "", 1148, "#{pathAndName}")
+     autoit.ControlClick(windwName_sv,"","[CLASS:Button;INSTANCE:2]")
+     autoit.WinWait("ダウンロードの完了")
+  end
+end
+```
+
+

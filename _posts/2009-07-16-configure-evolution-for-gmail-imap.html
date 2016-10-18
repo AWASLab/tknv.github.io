@@ -1,0 +1,16 @@
+---
+layout: post
+title: Configure Evolution for gmail IMAP
+date: '2009-07-16T03:19:00.000+09:00'
+author: tknv
+comments: true
+category:
+- linux
+- gmail
+- evolution
+modified_time: '2009-07-16T03:21:44.536+09:00'
+blogger_id: tag:blogger.com,1999:blog-2736766923155041598.post-4892243304996179960
+blogger_orig_url: http://yet-another-problem.blogspot.com/2009/07/configure-evolution-for-gmail-imap.html
+---
+
+<span style="font-weight:bold;"><h2>=> Receiving E-mail</h2></span><br />Server Type: IMAP<br />Server: imap.gmail.com:993<br />Username: Your complete Gmail address<br />Security: SSL<br />Authentication Type: Password<br />Remember Password: Check (optional)<br /><br /><span style="font-weight:bold;"><h2>=> Sending E-mail</h2></span><br />Server Type: SMTP<br />Server: smtp.gmail.com:587<br />Server Requires Authentication: Check<br />Security: TLS<br />Authentication Type: Login<br />Username: Your complete Gmail address<br />Remember Password: Check (optional)

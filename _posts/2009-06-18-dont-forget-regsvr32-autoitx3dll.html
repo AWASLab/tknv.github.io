@@ -1,0 +1,16 @@
+---
+layout: post
+title: Don't forget regsvr32 AutoItX3.dll
+date: '2009-06-18T19:43:00.000+09:00'
+author: tknv
+comments: true
+category:
+- ruby
+- watir
+- test
+modified_time: '2009-07-09T20:23:27.663+09:00'
+blogger_id: tag:blogger.com,1999:blog-2736766923155041598.post-4058649942169412165
+blogger_orig_url: http://yet-another-problem.blogspot.com/2009/06/dont-forget-regsvr32-autoitx3dll.html
+---
+
+When using Watir,should register AutoItX3.dll<br /><pre name="code" class='ruby'><br />>cd C:\ruby\lib\ruby\gems\1.8\gems\watir-1.5.6\watir\<br />>regsvr32 AutoItX3.dll<br /></pre><br />enjoy Watir!

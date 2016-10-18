@@ -1,0 +1,15 @@
+---
+layout: post
+title: Keep it simple,men.
+date: '2009-08-07T02:10:00.012Z'
+author: tknv
+tags:
+- art
+- Rube Goldberg
+modified_time: '2009-08-12T14:43:43.988Z'
+thumbnail: http://1.bp.blogspot.com/_dszryEfCgyA/SnuOPb5CgWI/AAAAAAAAAZU/SN45zCKkgCM/s72-c/Rube_goldberg_machine.jpg
+blogger_id: tag:blogger.com,1999:blog-11459759.post-7262484433651021035
+blogger_orig_url: http://phichyudebow.blogspot.com/2009/08/keep-it-simplemen.html
+---
+
+<blockquote><h1>Nice cream,I scream.</h1></blockquote></br><br /><br /><br /><br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/_dszryEfCgyA/SnuOPb5CgWI/AAAAAAAAAZU/SN45zCKkgCM/s1600-h/Rube_goldberg_machine.jpg"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 300px;" src="http://1.bp.blogspot.com/_dszryEfCgyA/SnuOPb5CgWI/AAAAAAAAAZU/SN45zCKkgCM/s400/Rube_goldberg_machine.jpg" border="0" alt=""id="BLOGGER_PHOTO_ID_5367039776778256738" /></a><br /><a href="http://creativecommons.org/licenses/by/2.0/">This file is licensed under Creative Commons Attribution 2.0 License</a><br /><a href="http://en.wikipedia.org/wiki/Rube_Goldberg"><h2>Rube Goldberg</h2></a><br /><center><table cellpadding="0" cellspacing="0" border="0" style="width:468px;height:90px;font-family:'ＭＳ Ｐゴシック','Osaka−等幅';background-image:url(http://www.moshimo.com/images/clbg_spacer.gif);background-repeat:no-repeat;font-size:12px;line-height:14px;"><tr><td rowspan="2" style="text-align:center;vertical-align:middle;width:91px;"><div style="width:82px;height:82px;background-image:url(http://www.moshimo.com/images/cl_frame1_0.gif);float:right;"><a href="http://www.moshimo.com/article/405246/88173"><img src="http://www.moshimo.com/item_image/0057900000002/3/m.jpg"width="80"height="80" style="margin:1px;border:0;" alt="【電子タバコ】TOKYO SMOKERカートリッジ（5個×10箱）レギュラー（レギュラー味） " /></a></div></td><td style="text-align:left;padding:0 5px;"><p style="font-size:16px;font-weight:900;margin:2px 0;"><a href="http://www.moshimo.com/article/405246/88173" style="text-decoration:underline;">【電子タバコ】TOKYO SMOKERカート…</a></p><p style="margin:3px 0;font-size:12px;"><span style="font-size:13px;font-weight:900;">￥8,400(税込)</span></p><p style="margin:0px 20px 0 0;text-align:left;">※こちらの商品は交換カートリッジ単体のみです。ご利用には、別途本体が必要となります。今回USBケーブルからの充…</p></td></tr><tr><td style="text-align:right;"><input type="button" value="詳細を見る" style="width:101px; height:17px; margin:0 5px 3px 0; cursor:pointer; font-size:12px;" onClick="location.href='http://www.moshimo.com/article/405246/88173'"><input type="button" value="カートに入れる" style="width:101px; height:17px; margin:0 15px 3px 0; cursor:pointer; font-size:12px;" onClick="location.href='http://www.moshimo.com/cart/add?shop_id=405246&article_id=88173'"><img src="http://www.moshimo.com/analytics/tracking.gif?s=405246&a=88173" width="1" height="1" alt="" style="margin: 0; border: 0;" /></td></tr></table></center><div class="blogger-post-footer">/TKNV</div>

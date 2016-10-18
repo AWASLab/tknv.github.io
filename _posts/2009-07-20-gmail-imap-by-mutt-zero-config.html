@@ -1,0 +1,16 @@
+---
+layout: post
+title: Gmail IMAP by Mutt "Zero config !"
+date: '2009-07-20T20:07:00.000+09:00'
+author: tknv
+comments: true
+category:
+- mutt
+- linux
+- gmail
+modified_time: '2009-07-20T20:28:42.832+09:00'
+blogger_id: tag:blogger.com,1999:blog-2736766923155041598.post-2953634431090770795
+blogger_orig_url: http://yet-another-problem.blogspot.com/2009/07/gmail-imap-by-mutt-zero-config.html
+---
+
+<blockquote><h1>Zero config !</h1></blockquote><br />There are many how to internet <b>Gmail IMAP by Mutt</b></br><br />But this is interactive way for feel Mutt with Gmail IMAP.</br><br /><pre code='bash'><br />% mutt (enter)<br />Then when see mutt,Type 'c'<br />#####Starting Interactive with mutt########<br />Open mailbox ('?') for list):imaps://imap.gmail.com:993(enter)<br />your account or id:Yours@gmail.com(enter)<br />Passwd:YoursPasswd(enter)<br /></pre><br />It is sure works Mutt 1.5.20.</br>

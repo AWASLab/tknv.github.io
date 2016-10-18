@@ -1,0 +1,19 @@
+---
+layout: post
+title: CPU FREQUENCY CONTROL
+date: '2012-02-02T23:49:00.003+09:00'
+author: tknv
+comments: true
+category:
+- cpu
+- archlinux
+- linux
+- fluxbox
+- lubuntu
+- ubuntu
+modified_time: '2012-02-03T02:14:10.832+09:00'
+blogger_id: tag:blogger.com,1999:blog-2736766923155041598.post-135133187759839901
+blogger_orig_url: http://yet-another-problem.blogspot.com/2012/02/cpu-frequency-control.html
+---
+
+<blockquote><a href="https://wiki.archlinux.org/index.php/CPU_Frequency_Scaling">Linux CPUクロックを操作する。</a></blockquote><b>FluxBox: add CPU frequency control in menu</b><br /><code># vim .fluxbox/menu</code><br /><script src="https://gist.github.com/890104.js?file=.fluxbox/menu"></script><br /><br /><b>CPU frequency control by script for Archlinux.</b><br />command below it at terminal.<br /><code># pacman -S cpufrequtils<br /># vim /etc/rc.conf<br />...<br />MODULES=(acpi-cpufreq ...)<br />...<br /># sudo rc.d start acpi-cpufreq<br /></code><br />Checking.<br /><code># cpufreq-info<br /></code><br />It should return CPU info.<br />then.<br /><code># vim ~/Scripts/CPU-performance</code><br /><script src="https://gist.github.com/1717434.js?file=CPU-performance"></script><br /><code># chmod +x ~/Scripts/CPU-performance</code><br /><code># ./home/foo/Scripts/CPU-performance</code><br />Now machine foo's CPU is Full GHZ clock!

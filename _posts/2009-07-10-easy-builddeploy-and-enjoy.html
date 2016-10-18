@@ -1,0 +1,17 @@
+---
+layout: post
+title: easy build,deploy and enjoy
+date: '2009-07-10T18:14:00.000+09:00'
+author: tknv
+comments: true
+category:
+- ruby
+- GAE
+- bumble
+- sinatra
+modified_time: '2009-07-14T01:07:01.255+09:00'
+blogger_id: tag:blogger.com,1999:blog-2736766923155041598.post-6637371517132656919
+blogger_orig_url: http://yet-another-problem.blogspot.com/2009/07/easy-builddeploy-and-enjoy.html
+---
+
+<div style="width:425px;text-align:left" id="__ss_1510277"><a style="font:14px Helvetica,Arial,Sans-serif;display:block;margin:12px 0 3px 0;text-decoration:underline;" href="http://www.slideshare.net/sausheong/ruby-and-the-cloud" title="Ruby And The Cloud">Ruby And The Cloud</a><object style="margin:0px" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=rubyandthecloud2-090530103325-phpapp02&stripped_title=ruby-and-the-cloud" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=rubyandthecloud2-090530103325-phpapp02&stripped_title=ruby-and-the-cloud" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object><div style="font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px;">View more <a style="text-decoration:underline;" href="http://www.slideshare.net/">presentations</a> from <a style="text-decoration:underline;" href="http://www.slideshare.net/sausheong">sausheong</a>.</div></div>
