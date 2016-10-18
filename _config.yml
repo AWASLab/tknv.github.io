@@ -118,7 +118,8 @@ sass:
 gems:
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-lunr-js-search
+  - tiny_segmenter
+  # - jekyll-lunr-js-search
 # https://github.com/jekyll/jekyll/issues/2938
 exclude: [vendor]
 

@@ -6,3 +6,4 @@ source 'https://rubygems.org'
 gem 'github-pages'
 gem "redcarpet", github: "triplecanopy/redcarpet"
 gem 'jekyll-lunr-js-search'
+gem 'tiny_segmenter'

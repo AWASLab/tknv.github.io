@@ -1,0 +1,1 @@
+/home/tknv/src/jekyll-lunr-js-search/build/jekyll_lunr_js_search.rb

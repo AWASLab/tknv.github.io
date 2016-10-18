@@ -138,6 +138,7 @@ GEM
       libv8 (~> 3.16.14.0)
       ref
     thread_safe (0.3.5)
+    tiny_segmenter (0.0.6)
     typhoeus (0.8.0)
       ethon (>= 0.8.0)
     tzinfo (1.2.2)
@@ -151,6 +152,7 @@ DEPENDENCIES
   github-pages
   jekyll-lunr-js-search
   redcarpet!
+  tiny_segmenter
 
 BUNDLED WITH
    1.13.2
