@@ -4,8 +4,8 @@ email: rreedd555@gmail.com
 author: tknv
 description: NO ROCKS, NO PUNKS, SO SUCKS !
 baseurl:     ""
-url:         ""
-# url:         "https://tknv.github.io"
+# url:         ""
+url:         "https://tknv.github.io"
 date_format: "%b %-d, %Y"
 
 # Google services
@@ -43,9 +43,9 @@ facebook_appid:
 facebook_comments_number: 10
 
 # Social icons
-github_username: tknv
-bitbucket_username: tknv
-stackoverflow_id: 137869
+github_username: 
+bitbucket_username: 
+stackoverflow_id: 
 twitter_username: tknv
 skype_username: 
 steam_nickname: 
