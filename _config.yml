@@ -118,20 +118,5 @@ sass:
 gems:
   - jekyll-paginate
   - jekyll-sitemap
-  - tiny_segmenter
-  # - jekyll-lunr-js-search
 # https://github.com/jekyll/jekyll/issues/2938
 exclude: [vendor]
-
-# search
-lunr_search:
-  excludes:
-    - rss.xml
-    - atom.xml
-    - feed.xml
-    - fb-instant-articles.xml
-    - Gemfile.lock
-    - LICENSE.txt
-    - search.html
-  stopwords: "stopwords.txt"
-  min_length: 2

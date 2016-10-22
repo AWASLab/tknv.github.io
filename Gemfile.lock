@@ -78,10 +78,6 @@ GEM
     jekyll-github-metadata (2.1.1)
       jekyll (~> 3.1)
       octokit (~> 4.0)
-    jekyll-lunr-js-search (3.2.0)
-      json (~> 1.8)
-      nokogiri (~> 1.6)
-      therubyracer (~> 0.12)
     jekyll-mentions (1.2.0)
       activesupport (~> 4.0)
       html-pipeline (~> 2.3)
@@ -104,7 +100,6 @@ GEM
       jekyll (>= 3.0)
     json (1.8.3)
     kramdown (1.11.1)
-    libv8 (3.16.14.15)
     liquid (3.0.6)
     listen (3.0.6)
       rb-fsevent (>= 0.9.3)
@@ -125,7 +120,6 @@ GEM
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
-    ref (2.0.0)
     rouge (1.11.1)
     safe_yaml (1.0.4)
     sass (3.4.22)
@@ -134,11 +128,7 @@ GEM
       faraday (~> 0.8, < 0.10)
     terminal-table (1.7.3)
       unicode-display_width (~> 1.1.1)
-    therubyracer (0.12.2)
-      libv8 (~> 3.16.14.0)
-      ref
     thread_safe (0.3.5)
-    tiny_segmenter (0.0.6)
     typhoeus (0.8.0)
       ethon (>= 0.8.0)
     tzinfo (1.2.2)
@@ -150,9 +140,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll-lunr-js-search
   redcarpet!
-  tiny_segmenter
 
 BUNDLED WITH
-   1.13.2
+   1.13.5
