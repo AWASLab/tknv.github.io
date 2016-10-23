@@ -4,6 +4,7 @@ email: rreedd555@gmail.com
 author: tknv
 description: NO ROCKS, NO PUNKS, SO SUCKS !
 cover: /images/site-cover.jpg
+location: local
 baseurl:     ""
 # url:         ""
 url:         "https://tknv.github.io"
@@ -13,7 +14,7 @@ date_format: "%b %-d, %Y"
 google_verification:
 # Use either direct GA implementation or set up GTM account
 # - using both will skew your data (leave blank to not use at all)
-google_analytics:
+google_analytics: UA-2683223-21
 google_tag_manager:
 # Bing services
 bing_verification:

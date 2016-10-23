@@ -4,7 +4,7 @@ title: Get BLogger Labels
 date: '2009-07-09T19:14:00.000+09:00'
 author: tknv
 comments: true
-category:
+tags:
 - ruby
 - GAE
 - JSON
@@ -14,4 +14,4 @@ blogger_id: tag:blogger.com,1999:blog-2736766923155041598.post-82039840824673021
 blogger_orig_url: http://yet-another-problem.blogspot.com/2009/07/get-blogger-labels.html
 ---
 
-<pre name='code' class='ruby'><br /><br />$label_url = "http://www.blogger.com/feeds/#{$userID}/blogs/#{$blogID}?alt=json-in-script&callback=listLabels"<br /><br />class BlogLabels<br /><br />  def get_labels<br />    result = URLFetch.get($label_url)<br />  result_headless = result.gsub("listLabels(",'')<br />  pure_result = result_headless.gsub(");",'')<br />    JSON.parse(pure_result)['entry']['category']<br />  end<br /><br />end<br /><br />@labels = BlogLabels.new<br />@labels.get_labels.each do |cont|<br /> puts cont['term']<br />end<br /></pre><br />JSON was not works.<br />Change to use YAML.<br /><pre name='code' class='ruby'><br /> response = URLFetch.get($label_url)<br /> result = response.to_s<br /> result_headless = result.gsub("listLabels(",'')<br /> pure_result = result_headless.gsub(");",'')<br /> json_to_yaml = YAML::load(pure_result)['entry']['category']<br /></pre>
+<pre name='code' class='ruby'><br /><br />$label_url = "http://www.blogger.com/feeds/#{$userID}/blogs/#{$blogID}?alt=json-in-script&callback=listLabels"<br /><br />class BlogLabels<br /><br />  def get_labels<br />    result = URLFetch.get($label_url)<br />  result_headless = result.gsub("listLabels(",'')<br />  pure_result = result_headless.gsub(");",'')<br />    JSON.parse(pure_result)['entry']['tags']<br />  end<br /><br />end<br /><br />@labels = BlogLabels.new<br />@labels.get_labels.each do |cont|<br /> puts cont['term']<br />end<br /></pre><br />JSON was not works.<br />Change to use YAML.<br /><pre name='code' class='ruby'><br /> response = URLFetch.get($label_url)<br /> result = response.to_s<br /> result_headless = result.gsub("listLabels(",'')<br /> pure_result = result_headless.gsub(");",'')<br /> json_to_yaml = YAML::load(pure_result)['entry']['tags']<br /></pre>

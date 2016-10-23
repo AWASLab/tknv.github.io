@@ -11,7 +11,8 @@ tags:
 ---
 ## All android(rooted) needs SGit and Terminal Emulator.
 **On [Terminal Emulator](https://f-droid.org/repository/browse/?fdfilter=terminal&fdid=jackpal.androidterm)**
-```
+
+```shell
 su
 ssh-keygen -t rsa -C "yo_mail@foo.com"
 # /data/.ssh is ok, just enter. no need change path.
@@ -19,6 +20,7 @@ ssh-keygen -t rsa -C "yo_mail@foo.com"
 cp /data/.ssh/id_rsa /your-sdcard-path
 cp /data/.ssh/id_rsa.pub /your-sdcard-path
 ```
+
 Add /your-sdcard-path/id_rsa.pub at https://github.com/settings/ssh .  
 **On [SGit](https://f-droid.org/repository/browse/?fdfilter=sgit&fdid=me.sheimi.sgit) **  
 From menu *Private Keys*, add /your-sdcard-path/id_rsa .  
@@ -29,5 +31,4 @@ Push **+**, then
 - empty at *Password*  
 SGit uses root for user by default and when ssh-keygen, did not make password on terminal emulator.  
 Less, but ok. I tested android 4.4.4.  
-
  
