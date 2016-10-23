@@ -3,7 +3,7 @@ layout: post
 title: "Push and pull Github by SGit on Android."
 date: 2015-02-24 21:59:49 +0700
 comments: true
-categories: 
+tags: 
 - git
 - SGit
 - Android

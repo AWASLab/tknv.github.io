@@ -5,7 +5,7 @@ date: 2015-03-08 00:31:33 +0700
 author: tknv
 cover: /images/deliver-to-kindle/zews.png
 comments: true
-categories: 
+tags: 
 - kindle
 - amazon
 - script

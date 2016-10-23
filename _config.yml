@@ -3,6 +3,7 @@ title: Cannot, today Monday
 email: rreedd555@gmail.com
 author: tknv
 description: NO ROCKS, NO PUNKS, SO SUCKS !
+cover: /images/site-cover.jpg
 baseurl:     ""
 # url:         ""
 url:         "https://tknv.github.io"
@@ -19,7 +20,7 @@ bing_verification:
 
 # Optional features
 animated:             true
-show_related_posts:   true
+show_related_posts:   false
 show_post_footers:    false
 show_social_icons:    true
 ajaxify_contact_form: false
@@ -34,12 +35,12 @@ fb_page_id:
 
 # Disqus post comments
 # (leave blank to disable Disqus)
-disqus_shortname:
+disqus_shortname: tknvio
 
 # Facebook Comments plugin
 # (leave blank to disable Facebook Comments, otherwise set it to true)
-facebook_comments:
-facebook_appid:
+facebook_comments: true
+facebook_appid: 352607461750023
 facebook_comments_number: 10
 
 # Social icons

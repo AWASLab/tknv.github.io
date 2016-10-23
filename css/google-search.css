@@ -40,11 +40,13 @@ table.gsc-search-box td.gsc-input {
 input.gsc-input {
   border-color: #D9D9D9;
   /*font-size: 13px;*/
+  width: 100%;
   padding: 1px 6px;
 }
 td.gsc-input {
   border-top: none;
   height: 40px;
+  width: 100%;
   vertical-align: bottom;
   padding-left: 0px;
   padding-right: 0px;

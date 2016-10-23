@@ -5,7 +5,7 @@ date: 2015-02-25 20:53:40 +0700
 author: w.tknv
 cover: /images/oct-logo.png
 comments: true
-categories: 
+tags: 
 - pygments
 - octopress
 - openssl
