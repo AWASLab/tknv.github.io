@@ -1,3 +1,4 @@
+encoding: utf-8
 # Site settings
 title: Cannot, today Monday
 email: rreedd555@gmail.com
@@ -32,7 +33,7 @@ enable_anchorjs: true
 # Facebook Page integration
 # (for instant articles and other stuff)
 fb_page: false
-fb_page_id: 
+fb_page_id:
 
 # Disqus post comments
 # (leave blank to disable Disqus)
@@ -45,13 +46,13 @@ facebook_appid: 352607461750023
 facebook_comments_number: 10
 
 # Social icons
-github_username: 
-bitbucket_username: 
-stackoverflow_id: 
+github_username:
+bitbucket_username:
+stackoverflow_id:
 twitter_username: tknv
-skype_username: 
-steam_nickname: 
-google_plus_id: 
+skype_username:
+steam_nickname:
+google_plus_id:
 linkedin_username:
 angellist_username:
 medium_id:

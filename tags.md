@@ -8,7 +8,7 @@ tags: tags
 <div class="tag-cloud">
     {% for _tag in _tags %}
     <span class="site-tag">
-        <a href="#{{ _tag | first | slugify }}"
+        <a href="#{{ _tag | first }}"
             style="font-size: {{ _tag | last | size  |  times: 4 | plus: 80  }}%">
                 {{ _tag[0] | replace:'-', ' ' }} ({{ _tag | last | size }})
         </a>
@@ -25,7 +25,7 @@ to the `site_tags` variable. -->
 <div>
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
-    <h2 id="{{ this_word | cgi_escape }}">{{ this_word }}</h2>
+    <h2 id="{{ this_word }}">{{ this_word }}</h2>
     {% for post in site.tags[this_word] %}{% if post.title != null %}
       <div>
         <span style="float: left;">

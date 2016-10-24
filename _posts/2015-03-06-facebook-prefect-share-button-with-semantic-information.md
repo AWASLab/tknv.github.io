@@ -10,7 +10,7 @@ tags:
 - Web
 - SEO
 - semantic
-- share button
+- share-button
 description: making looks nice share contents for share button.
 ---
 When share ![share button](/images/facebook-btn/share-btn.png) , going to see ![share image](/images/facebook-btn/sharing-sample.png)   

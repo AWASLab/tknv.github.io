@@ -1,1 +1,41 @@
-/* if need */
+td.gsc-search-button {
+  border-top: none;
+}
+
+td.gsc-clear-button {
+  border-top: none;
+}
+
+td.gsc-input {
+  border-top: none;
+}
+
+.cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border-top: none;
+}
+.gsc-search-box-tools .gsc-search-box .gsc-input {
+    text-align: center;
+}
+
+td#gs_tti50.gsib_a {
+  padding-top: 0;
+  border-top: 0;
+  vertical-align: text-top;
+  margin-bottom: 8px;
+}
+
+input#gsc-i-id1.gsc-input {
+  padding-top: 0;
+}
+
+td.gsib_b {
+  border-top: 0;
+  padding-top: 2px;
+  vertical-align: text-top;
+  margin-bottom: 8px;
+}
