@@ -5,5 +5,3 @@ source 'https://rubygems.org'
 # https://github.com/github/pages-gem
 gem 'github-pages'
 gem "redcarpet", github: "triplecanopy/redcarpet"
-gem 'jekyll-lunr-js-search'
-gem 'tiny_segmenter'

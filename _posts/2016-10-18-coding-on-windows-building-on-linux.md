@@ -5,7 +5,7 @@ date: 2016-10-18 01:20:33 +0700
 author: tknv
 cover: 
 comments: true
-categories: 
+tags: 
 - linux
 - windows
 - samba

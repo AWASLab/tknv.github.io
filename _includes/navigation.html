@@ -8,13 +8,39 @@
         <a href="{{ page.url }}">{{ page.title }}</a>
     {% endif %}
 {% endfor %}-->
-{% for page in site.pages %}
-    {% if page.tags contains "search" %}
-        <a href="{{ page.url }}">{{ page.title }}</a>
-    {% endif %}
-{% endfor %}
-{% for page in site.pages %}
+<!--{% for page in site.pages %}
     {% if page.tags contains "me" %}
         <a href="{{ page.url }}">{{ page.title }}</a>
     {% endif %}
 {% endfor %}
+{% for page in site.pages %}
+    {% if page.tags contains "search" %}
+        <a href="{{ page.url }}">{{ page.title }}</a>
+    {% endif %}
+{% endfor %}-->
+<div id='cse-search-form' style='width: 100%;'>Loading</div>
+<script src='//www.google.com/jsapi' type='text/javascript'></script>
+<script type='text/javascript'>
+google.load('search', '1', {
+    <!--callback: OnGoogleSearchLoad,-->
+    language: 'en',
+    nocss: false,
+    style: "https://tknv.github.io/css/google-search.css"
+    });
+google.setOnLoadCallback(function() {
+  var customSearchOptions = {};
+  var orderByOptions = {};
+  orderByOptions['keys'] = [{label: 'Relevance', key: ''} , {label: 'Date', key: 'date'}];
+  customSearchOptions['enableOrderBy'] = true;
+  customSearchOptions['orderByOptions'] = orderByOptions;
+  var imageSearchOptions = {};
+  imageSearchOptions['layout'] = 'google.search.ImageSearch.LAYOUT_CLASSIC';
+  customSearchOptions['enableImageSearch'] = true;
+  var customSearchControl =   new google.search.CustomSearchControl('005177684232785699785:g2ztd_3rgiy', customSearchOptions);
+  customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+  var options = new google.search.DrawOptions();
+  options.enableSearchboxOnly('https://www.google.com/cse?cx=005177684232785699785:g2ztd_3rgiy', null, true);
+  options.setAutoComplete(true);
+  customSearchControl.draw('cse-search-form', options);
+}, true);
+</script>

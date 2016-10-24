@@ -5,7 +5,7 @@ date: Wednesay, 4. March 2015 12:32AM
 author: tknv
 cover:  /images/ansible-how-to-build-your-own.png
 comments: true
-categories: [mail server, sip server, XMPP server, carddav server, caldav server, git server, file server, rss-reader server, VPN server, read-it-later server, trusty, ubuntu, pbx, sip]
+tags: [mail server, sip server, XMPP server, carddav server, caldav server, git server, file server, rss-reader server, VPN server, read-it-later server, trusty, ubuntu, pbx, sip]
 description: Your very own server that you need and able to access Android with OSS applications.
 ---
 Building your own mail, sip, XMPP, carddav, caldav, git, file, rss-reader, VPN, read-it-later etc. AND PBX freeswitch with [ansible](https://github.com/ansible/ansible)  and [sovereign](https://github.com/al3x/sovereign) . Enjoy from PC browser and Android([owncloud:file](https://f-droid.org/repository/browse/?fdfilter=owncloud&fdid=com.owncloud.android) , [DAVdroid; address and calendar sync](https://f-droid.org/repository/browse/?fdfilter=owncloud&fdid=at.bitfire.davdroid), [K-9 Mail](https://f-droid.org/repository/browse/?fdfilter=K9&fdid=com.fsck.k9) ,  [Conversations; XMPP client](https://f-droid.org/repository/browse/?fdfilter=conversations&fdid=eu.siacs.conversations), [wallabag; Read-it-later client](https://f-droid.org/repository/browse/?fdfilter=wallabag&fdid=fr.gaulupeau.apps.InThePoche), [OpenVPN for Android; OpenVPN without root](https://f-droid.org/repository/browse/?fdfilter=vPN&fdid=de.blinkt.openvpn), [Sipdroid for A SIP (VOIP) client](https://f-droid.org/repository/browse/?fdfilter=sip&fdid=org.sipdroid.sipua) ).

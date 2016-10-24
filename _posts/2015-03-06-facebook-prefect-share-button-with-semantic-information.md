@@ -5,7 +5,7 @@ date: 2015-03-06 00:04:34 +0900
 author: tknv
 cover:  /images/facebook-btn/cover.png
 comments: true
-categories: 
+tags: 
 - Facebook
 - Web
 - SEO

@@ -3,6 +3,8 @@ title: Cannot, today Monday
 email: rreedd555@gmail.com
 author: tknv
 description: NO ROCKS, NO PUNKS, SO SUCKS !
+cover: /images/site-cover.jpg
+location: local
 baseurl:     ""
 # url:         ""
 url:         "https://tknv.github.io"
@@ -12,14 +14,14 @@ date_format: "%b %-d, %Y"
 google_verification:
 # Use either direct GA implementation or set up GTM account
 # - using both will skew your data (leave blank to not use at all)
-google_analytics:
+google_analytics: UA-2683223-21
 google_tag_manager:
 # Bing services
 bing_verification:
 
 # Optional features
 animated:             true
-show_related_posts:   true
+show_related_posts:   false
 show_post_footers:    false
 show_social_icons:    true
 ajaxify_contact_form: false
@@ -34,12 +36,12 @@ fb_page_id:
 
 # Disqus post comments
 # (leave blank to disable Disqus)
-disqus_shortname:
+disqus_shortname: tknvio
 
 # Facebook Comments plugin
 # (leave blank to disable Facebook Comments, otherwise set it to true)
-facebook_comments:
-facebook_appid:
+facebook_comments: true
+facebook_appid: 352607461750023
 facebook_comments_number: 10
 
 # Social icons

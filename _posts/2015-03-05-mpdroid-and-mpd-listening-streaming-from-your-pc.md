@@ -5,24 +5,28 @@ date: Thursday, 05. March 2015 12:04AM
 author: tknv
 cover:  /images/MPDoid-and-mpd.png
 comments: true
-categories:
+tags:
 - Android
 - MPD
 - streaming
 description: Listening and control music on Android by MPDroid from your PC streaming.
 ---
 Listening music on Android by [MPDroid-MPD (Music Player Daemon) client](MPDroid) from your PC streaming.  
+
 ## Install mpd ##  
 
 ```bash
 sudo apt-get install mpd mpc lame ncmpcpp  
 ```
+
 **prepare configs**
+
 ```bash
 mkdir -p .config/mpd  
 touch .config/mpd/log
 ```
 mpd.conf
+
 ```config
 music_directory		"~/music"
 playlist_directory		"~/.config/mpd/playlists"
@@ -75,6 +79,7 @@ mpd .config/mpd/mpd.conf
 mpc update
 ```
 When something wrong with streaming.  
+
 ```bash
 ncmpcpp
 # push 8 -> Outputs -> select *** Stream, toggle enable <-> disable

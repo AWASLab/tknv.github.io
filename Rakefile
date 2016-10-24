@@ -18,7 +18,10 @@ task :post, :title do |t, args|
     layout: post
     title: #{title}
     date: #{Time.new.strftime('%Y-%m-%d %H:%M')}
-    categories:
+    cover: /images/cover-#{title}.jpg
+    tags:
+    description:
+    location:
     ---
 
     EOS
@@ -45,7 +48,10 @@ task :draft, :title do |t, args|
     layout: post
     title: #{title}
     date: #{Time.new.strftime('%Y-%m-%d %H:%M')}
-    categories:
+    cover: /images/cover-#{title}.jpg
+    tags:
+    description:
+    location:
     ---
 
     EOS
