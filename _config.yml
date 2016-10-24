@@ -120,6 +120,24 @@ sass:
 gems:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-archives
 # https://github.com/jekyll/jekyll/issues/2938
 exclude: [vendor]
 
+jekyll-archives:
+  enabled:
+    - year
+    - month
+    # - tags
+  # layout: 'archive'
+  layouts:
+    year: year-archive
+    month: month-archive
+  #   # day: day-archive
+  #   tag: tag-archive-layout
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+  #   # day: '/:year/:month/:day/'
+  #   tag: '/tag/:name/'
+  #   # category: '/category/:name/'

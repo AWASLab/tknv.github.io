@@ -9,15 +9,25 @@
     {% endif %}
 {% endfor %}-->
 <!--{% for page in site.pages %}
+    {% if page.tags contains "search" %}
+        <a href="{{ page.url }}">{{ page.title }}</a>
+    {% endif %}
+{% endfor %}-->
+{% for page in site.pages %}
     {% if page.tags contains "me" %}
         <a href="{{ page.url }}">{{ page.title }}</a>
     {% endif %}
 {% endfor %}
 {% for page in site.pages %}
-    {% if page.tags contains "search" %}
+    {% if page.tags contains "tags" %}
         <a href="{{ page.url }}">{{ page.title }}</a>
     {% endif %}
-{% endfor %}-->
+{% endfor %}
+{% for page in site.pages %}
+    {% if page.tags contains "archive" %}
+        <a href="{{ page.url }}">{{ page.title }}</a>
+    {% endif %}
+{% endfor %}
 <div id='cse-search-form' style='width: 100%;'>Loading</div>
 <script src='//www.google.com/jsapi' type='text/javascript'></script>
 <script type='text/javascript'>
