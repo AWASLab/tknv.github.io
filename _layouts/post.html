@@ -10,11 +10,9 @@ layout: default
 <div class="post-header mb2" itemscope itemtype="http://schema.org/BlogPosting">
   <h1 itemprop="name">{{ page.title }}</h1>
   {% if page.cover %}
-    <meta itemprop="image" content="{{ page.cover }}" />
-    <p><img src="{{ page.cover }}" alt="{{ page.title }}"></p>
+    <meta itemprop="image" content="{{ page.cover }}" /><p><img src="{{ page.cover }}" alt="{{ page.title }}"></p>
   {% else %}
-    <meta itemprop="image" content="{{ site.cover }}" />
-    <p><img src="{{ site.cover }}" alt="{{ page.title }}"></p>
+    <meta itemprop="image" content="{{ site.cover }}" /><p><img src="{{ site.cover }}" alt="{{ page.title }}"></p>
   {% endif %}
   <span class="post-meta" itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: site.date_format }}</span><div itemprop="location" itemscope itemtype="http://schema.org/Place">
   {% if page.location %}
