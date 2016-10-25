@@ -7,35 +7,55 @@ layout: default
 {% assign minutes = 1 %}
 {% endif %}
 
-<div class="post-header mb2" itemscope itemtype="http://schema.org/BlogPosting">
-  <h1 itemprop="name">{{ page.title }}</h1>
-  {% if page.cover %}
-    <meta itemprop="image" content="{{ page.cover }}" /><p><img src="{{ page.cover }}" alt="{{ page.title }}"></p>
-  {% else %}
-    <meta itemprop="image" content="{{ site.cover }}" /><p><img src="{{ site.cover }}" alt="{{ page.title }}"></p>
-  {% endif %}
-  <span class="post-meta" itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: site.date_format }}</span><div itemprop="location" itemscope itemtype="http://schema.org/Place">
-  {% if page.location %}
-    <span class="post-meta" itemprop="name">at {{ page.location }}</span>
-  {% else %}
-    <span class="post-meta" itemprop="name">at {{ site.location }}</span>
-  {% endif %}
-  </div><br>
-  {% if page.update_date %}
-    <span class="post-meta">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</span><br>
-  {% endif %}
-  <span class="post-meta small">
-  {% if post.description %}
-    <span itemprop="description">{{ post.description }}</span>
-  {% else %}
-    <span itemprop="description">{{ post.excerpt }}</span>
-  {% endif %}
-  {% if page.minutes %}
-    {{ page.minutes }} {{ site.text.post.minute_read }}
-  {% else %}
-    {{ minutes }} {{ site.text.post.minute_read }}
-  {% endif %}
-  </span>
+<div class="post-header mb2">
+  <div itemscope itemtype="http://schema.org/BlogPosting">
+    <meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="https://google.com/article"/>
+    <h1 itemprop="headline">{{ page.title }}</h1>
+    <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+      <p><img src="{{ site.url }}{% if page.cover %}{{ page.cover }}{% else %}{{ site.cover }}{% endif %}" alt="{{ page.title }}"></p>
+      <meta itemprop="url" content="{{ site.url }}{% if page.cover %}{{ page.cover }}{% else %}{{ site.cover }}{% endif %}" alt="{{ page.title }}">
+      <meta itemprop="width" content="800">
+      <meta itemprop="height" content="800">
+    </div>
+    <span class="post-meta" itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{{ page.date | date: site.date_format }}</span>
+    {% if page.update_date %}
+      <span class="post-meta small" itemprop="dateModified" content="{{ page.update_date }}">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</span><br>
+    {% endif %}
+    <div itemprop="contentLocation" itemscope itemtype="http://schema.org/AdministrativeArea"">
+      {% if page.location %}
+        <span class="post-meta" itempro="name"><a href="https://www.google.com/maps/place/{{ page.location }}">at {{ page.location }}</a></span>
+      {% else %}
+        <span class="post-meta" itempro="name"><a href="https://www.google.com/maps/place/{{ site.location }}">at {{ site.location }}</a></span>
+      {% endif %}
+    </div>
+    </span><br>
+    <span class="post-meta small">
+      <span itemprop="description">
+      {% if page.description %}
+        {{ page.description }}
+      {% else %}
+        {{ page.excerpt }}
+      {% endif %}
+      </span>
+      <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+        <span itemprop="name"> - {{ page.author }}</span>
+      </span><br>
+    {% if page.minutes %}
+      {{ page.minutes }} {{ site.text.post.minute_read }}
+    {% else %}
+      {{ minutes }} {{ site.text.post.minute_read }}
+    {% endif %}
+    </span>
+    <!--<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+    <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+      <img src="https://google.com/logo.jpg"/>
+      <meta itemprop="url" content="https://google.com/logo.jpg">
+      <meta itemprop="width" content="600">
+      <meta itemprop="height" content="60">
+    </div>
+    <meta itemprop="name" content="Google">
+    </div>-->
+  </div>
 </div>
 
 <article class="post-content" itemprop="articleBody">

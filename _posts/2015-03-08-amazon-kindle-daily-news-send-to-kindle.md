@@ -3,7 +3,7 @@ layout: post
 title: "AMAZON Kindle - daily news! send to kindle"
 date: 2015-03-08 00:31:33 +0700
 author: tknv
-cover: /images/deliver-to-kindle/zews.png
+cover:  /images/deliver-to-kindle/zews.png
 comments: true
 tags: 
 - kindle

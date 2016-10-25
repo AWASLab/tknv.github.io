@@ -18,6 +18,7 @@ task :post, :title do |t, args|
     layout: post
     title: #{title}
     date: #{Time.new.strftime('%Y-%m-%d %H:%M')}
+    update_date:
     cover: /images/cover-#{title}.jpg
     tags:
     description:
@@ -48,6 +49,7 @@ task :draft, :title do |t, args|
     layout: post
     title: #{title}
     date: #{Time.new.strftime('%Y-%m-%d %H:%M')}
+    update_date:
     cover: /images/cover-#{title}.jpg
     tags:
     description:
