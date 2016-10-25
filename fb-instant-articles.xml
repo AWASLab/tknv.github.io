@@ -5,25 +5,25 @@ layout: null
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>{{ site.name | xml_escape }}</title>
-    <link>{{ site.url }}</link>
+    <title>{% if page.title %}{{ page.title | xml_escape }}{% else %}{{ site.title | xml_escape }}{% endif %}</title>
+    <link>{{ page.url }}</link>
     <description>
-      {% if site.description %}{{ site.description | xml_escape }}{% endif %}
+      {% if page.description %}{{ page.description | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}
     </description>
     {% for post in site.posts %}
         {% unless post.link %}
             <item>
-                <title>{{ post.title | xml_escape }}</title>
-                <link>{{ site.url }}{{ post.url }}</link>
+                <title>{{ page.title | xml_escape }}</title>
+                <link>{{ page.url }}</link>
                 <content:encoded>
                     <![CDATA[
-                    {{ post.content }}
+                    {{ page.content }}
                     ]]>
                 </content:encoded>
-                <guid isPermaLink="false">{{ post.url }}</guid>
+                <guid isPermaLink="false">{{ page.url }}</guid>
                 <description>
-                    {% if post.summary %}
-                    {{ post.summary | xml_escape }}
+                    {% if page.description %}
+                    {{ page.description | xml_escape }}
                     {% endif %}
                 </description>
                 <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
