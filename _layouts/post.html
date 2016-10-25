@@ -17,6 +17,11 @@ layout: default
     <span class="post-meta">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</span><br>
   {% endif %}
   <span class="post-meta small">
+  {% if page.description %}
+    <span itemprop="description">{{ page.description }}</span>
+  {% else %}
+    <span itemprop="description">{{ post.excerpt }}</span>
+  {% endif %}
   {% if page.minutes %}
     {{ page.minutes }} {{ site.text.post.minute_read }}
   {% else %}
