@@ -22,7 +22,8 @@ task :post, :title do |t, args|
     cover: /images/cover-#{title}.jpg
     tags:
     description:
-    location:
+    location: local
+    locale:
     ---
 
     EOS
@@ -53,7 +54,8 @@ task :draft, :title do |t, args|
     cover: /images/cover-#{title}.jpg
     tags:
     description:
-    location:
+    location: local
+    locale:
     ---
 
     EOS
