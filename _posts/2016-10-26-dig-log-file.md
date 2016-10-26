@@ -2,7 +2,7 @@
 layout: post
 title: dig log file
 date: 2016-10-26 15:15
-update_date:
+update_date: 2016-10-26 22:22
 cover: /images/cover-dig-log-file.jpg
 tags:
 - log
@@ -82,7 +82,7 @@ $> ./extract.sh
 ## grep logs
 
 ```shell
-$> grep -Ir -A 5 -B 3 --include=event.log -w 'not\ fun,\ but addict$'
+$> grep -Ir -A 5 -B 3 --include=event.log -w 'not\ fun,\ but\ addict$'
 ```
 
 recursively search and ignore binary files, search event.log file name, result show before 3 lines and after 5 lines from match line. search *something not fun, but addict*, match string should end at **addict**.
