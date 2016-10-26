@@ -7,7 +7,7 @@ description: NO ROCKS, NO PUNKS, SO SUCKS !
 cover: /images/site-cover.jpg
 location: local
 baseurl:     ""
-# url:         ""
+rurl:         "http://tknv.github.io"
 url:         "https://tknv.github.io"
 date_format: "%b %-d, %Y"
 

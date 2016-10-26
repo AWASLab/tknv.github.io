@@ -14,8 +14,8 @@ layout: default
     <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
       <p><img src="{{ site.url }}{% if page.cover %}{{ page.cover }}{% else %}{{ site.cover }}{% endif %}" alt="{{ page.title }}"></p>
       <meta itemprop="url" content="{{ site.url }}{% if page.cover %}{{ page.cover }}{% else %}{{ site.cover }}{% endif %}" alt="{{ page.title }}">
-      <meta itemprop="width" content="800">
-      <meta itemprop="height" content="800">
+      <meta itemprop="width" content="1024">
+      <meta itemprop="height" content="683">
     </div>
     <span class="post-meta" itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{{ page.date | date: site.date_format }}</span>
     {% if page.update_date %}
@@ -38,7 +38,7 @@ layout: default
       {% endif %}
       </span>
       <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-        <span itemprop="name"> - {{ page.author }}</span>
+        <span itemprop="name"> - {% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</span>
       </span><br>
     {% if page.minutes %}
       {{ page.minutes }} {{ site.text.post.minute_read }}
@@ -46,15 +46,15 @@ layout: default
       {{ minutes }} {{ site.text.post.minute_read }}
     {% endif %}
     </span>
-    <!--<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+    <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
     <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-      <img src="https://google.com/logo.jpg"/>
-      <meta itemprop="url" content="https://google.com/logo.jpg">
+      <img src="{{ site.url }}/publisher/logo.png"/>
+      <meta itemprop="url" content="{{ site.url }}/publisher/logo.png">
       <meta itemprop="width" content="600">
       <meta itemprop="height" content="60">
     </div>
-    <meta itemprop="name" content="Google">
-    </div>-->
+    <meta itemprop="name" content="rreedd">
+    </div>
   </div>
 </div>
 
@@ -66,7 +66,7 @@ layout: default
 {% for tag in page.tags %}
   <a href="/tags#{{ tag }}" class="tag"><strong>{{ tag }}</strong></a>
 {% endfor %}
-<br>
+<p>--</p><br>
 
 {% if site.show_sharing_icons %}
   {% include share_buttons.html %}
