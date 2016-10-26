@@ -21,7 +21,7 @@ layout: default
     {% if page.update_date %}
       <span class="post-meta small" itemprop="dateModified" content="{{ page.update_date }}">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</span><br>
     {% endif %}
-    <div itemprop="contentLocation" itemscope itemtype="http://schema.org/AdministrativeArea"">
+    <div itemprop="contentLocation" itemscope itemtype="http://schema.org/AdministrativeArea">
       {% if page.location %}
         <span class="post-meta" itempro="name"><a href="https://www.google.com/maps/place/{{ page.location }}">at {{ page.location }}</a></span>
       {% else %}
@@ -48,7 +48,6 @@ layout: default
     </span>
     <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
     <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-      <img src="{{ site.url }}/publisher/logo.png"/>
       <meta itemprop="url" content="{{ site.url }}/publisher/logo.png">
       <meta itemprop="width" content="600">
       <meta itemprop="height" content="60">
