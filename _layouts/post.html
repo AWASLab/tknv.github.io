@@ -14,8 +14,8 @@ layout: default
     <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
       <p><img src="{{ site.url }}{% if page.cover %}{{ page.cover }}{% else %}{{ site.cover }}{% endif %}" alt="{{ page.title }}"></p>
       <meta itemprop="url" content="{{ site.url }}{% if page.cover %}{{ page.cover }}{% else %}{{ site.cover }}{% endif %}" alt="{{ page.title }}">
-      <meta itemprop="width" content="1024">
-      <meta itemprop="height" content="683">
+      <meta itemprop="width" content="{% if page.width %}{{ page.width }}{% else %}1024{% endif %}">
+      <meta itemprop="height" content="{% if page.height %}{{ page.height }}{% else %}683{% endif %}">
     </div>
     <span class="post-meta" itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{{ page.date | date: site.date_format }}</span>
     {% if page.update_date %}

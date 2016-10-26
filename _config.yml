@@ -5,9 +5,10 @@ email: rreedd555@gmail.com
 author: tknv
 description: NO ROCKS, NO PUNKS, SO SUCKS !
 cover: /images/site-cover.jpg
+width: 1024
+height: 768
 location: local
 baseurl:     ""
-rurl:         "http://tknv.github.io"
 url:         "https://tknv.github.io"
 date_format: "%b %-d, %Y"
 
