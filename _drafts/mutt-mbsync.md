@@ -77,26 +77,42 @@ set mailcap_path     = ~/.mutt/mailcap       # entries for filetypes
 set tmpdir           = ~/.mutt/temp          # where to keep temp files
 set signature        = ~/.mutt/sig           # my signature file
 # Account Settings ----------------------------------
-set spoolfile 		= "work/Inbox" #Default inbox.
-set mbox          = "work/Archive"
-# set mbox_type     = Maildir
-set postponed 		= "work/Drafts"
-set editor		    = "vim -c \"set spell spelllang=en\""
-set trash		      = "work/Deleted\ Items"
-set index_format	="%4C %Z %D %-15.15L (%4l) %s"
-set beep_new		=yes
-set copy		=yes
-set sort		="threads"
+set mbox_type    = Maildir
+set spoolfile    = "+work/Inbox" #Default inbox.
+set mbox         = "+work/Archive"
+set postponed    = "+work/Drafts"
+set editor		   = "vim -c \"set spell spelllang=en\""
+# How to use spell checker
+# ]s — move to the next mispelled word
+# [s — move to the previous mispelled word
+# zg — add a word to the dictionary
+# zug — undo the addition of a word to the dictionary
+# z= — view spelling suggestions for a mispelled word
+set trash		     = "+work/Deleted\ Items"
+set index_format = "%4C %Z %D %-15.15L (%4l) %s"
+set beep_new     = yes
+set copy         = yes
+set sort         = "threads"
 set query_command	="lbdbq '%s'"# how to query the exchange ldap database bind editor "\t" complete-query #tab completion over ldap
 # Mailboxes to show in the sidebar.
-mailboxes =work/Inbox \
-          =work/Sent\ Items \
-          =work/Archive \
-          =work/Deleted\ Items \
-          =work/Drafts
+mailboxes +work/Inbox \
+          +work/Inbox/\.Action \
+          +work/Inbox/\.Hold \
+          +work/Inbox/\.Done \
+          +work/Conversation\ History \
+          +work/Inbox/\.HR \
+          +work/Inbox/\.HR\.training \
+          +work/Inbox/\.HR\.transition \
+          +work/Inbox/\.HR\.performance \
+          +work/Inbox/\.IT-issue \
+          +work/Inbox/\.ProductInfo \
+          +work/Archive \
+          +work/Sent\ Items \
+          +work/Deleted\ Items \
+          +work/Drafts
 bind index 		"\Ca" 'imap-fetch-mail'
 fcc-hook ~A "+work/Archive" # Saves copies of outgoing mail to "Archive" folder
-# NOTMUCH SETTINGS ----------------------------------
+# Notmuch setting ----------------------------------
 
 macro index <F8> \
 "<enter-command>set my_old_pipe_decode=\$pipe_decode my_old_wait_key=\$wait_key nopipe_decode nowait_key<enter>\
@@ -120,7 +136,7 @@ macro index <F6> \
 
 # Sidebar Patch --------------------------------------
 # set sidebar_delim   	= '  │'
-color sidebar_new color221 color233
+# color sidebar_new color221 color233
 set sidebar_visible 	= yes
 set sidebar_width   	= 30
 # Bind sidebar navigation to CTRL-n, CTRL-p, and CTRL-o
@@ -136,7 +152,7 @@ set status_format = "───[ Folder: %f ]───[%r%m messages%?n? (%n new)
 
 # Sending mail ---------------------------------------
 set from		="me@me.com"
-set realname		="tknv"
+set realname		="Takanobu Watanabe"
 set use_from		="yes"
 set envelope_from	="yes"
 set sendmail		="/usr/bin/msmtp"
@@ -202,7 +218,7 @@ bind pager G  bottom
 bind pager R  group-reply
 
 # Compose View Options -------------------------------
-set realname = "tknv"   # who am i?
+set realname = "Takanobu Watanabe"   # who am i?
 set envelope_from                    # which from?
 set sig_dashes                       # dashes before sig
 set askcc                            # ask for CC:
@@ -223,7 +239,7 @@ set crypt_use_gpgme=no
 # Automatically open evil HTML ---------------------
 auto_view text/html
 
-# Color set
+# Color quoted set
 color quoted0   blue        default
 color quoted1   green       default
 color quoted2   red         default
@@ -231,20 +247,38 @@ color quoted3   blue        default
 color quoted4   green       default
 color quoted5   red         default
 color quoted6   blue        default
-color signature green       default
-color tilde     cyan  default
-### edit try new colors
-# color   tree        magenta             default
-### make new messages yellow
-#color index brightyellow default ~N # New#
-#color header white          black   .               # Headers are this color,
-#color header white    black   ^Subject        # except for `Subject:'.
-### latest edit
-#color header white        default .               # Headers are this color,
-#color header red    white ^Subject        # except for `Subject:'.
-#color header black          red     ^(X-Spam-Status:\ Yes|X-Virus-Report:)
-#color header black          red     ^Newsgroups:.*, # cross-posted
-#color header black          green   ^Followup-To:   # followup header
-#color status    brightblue default
-#color indicator default red
-#color markers cyan black
+
+# Color scheme -------------------------------------
+color index      brightyellow  default ~N # New
+color attachment blue          white
+color error      brightwhite   red
+color hdrdefault brightwhite   blue
+color header     red           white   ^Subject        # except for `Subject:'.
+color header     black         red     ^(X-Spam-Status:\ Yes|X-Virus-Report:)
+color header     black         red     ^Newsgroups:.*, # cross-posted
+color header     black         green   ^Followup-To:   # followup header
+mono  header     bold ^(From|Subject):
+color indicator  brightwhite   blue
+color markers    brightcyan    default
+color message    white         default
+color normal     white         default
+color search     blue          default
+color signature  green         default
+color status     brightwhite   blue
+color tilde      brightmagenta default
+color tree       brightmagenta default
+
+# Various smilies and the like ---------------------
+color body brightgreen black <[Ee]?[Bb]?[Gg]>
+color body brightgreen black <[Bb][Gg]>
+color body brightgreen black ' [;:]-*[)>(<|]'
+
+# URLs ---------------------------------------------
+color body brightblue black (http|ftp|news|telnet|finger):\/\/([^[:space:]]+)
+color body brightblue black mailto:[-a-z_0-9.]+@[-a-z_0-9.]+
+mono body bold (http|ftp|news|telnet|finger):\/\/([^[:space:]]+)
+mono body bold mailto:[-a-z_0-9.]+@[-a-z_0-9.]+
+
+# email addresses ----------------------------------
+color body brightblue black [-a-z_0-9.%$]+@[-a-z_0-9.]+\\.[-a-z][-a-z]+
+mono body bold [-a-z_0-9.%$]+@[-a-z_0-9.]+\\.[-a-z][-a-z]+
