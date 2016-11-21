@@ -11,6 +11,8 @@ description:
 location: local
 locale:
 ---
+pass insert mail/work-gpg
+
 davmail
 
 https://outlook.office365.com/EWS/Exchange.asmx
@@ -26,7 +28,7 @@ mkdir mail/work
 mkdir mail/temp
 
 
-chmod 0600 .msmtprc 
+chmod 0600 .msmtprc
 .msmtprc
 account work
 host localhost
@@ -155,7 +157,7 @@ set from		="me@me.com"
 set realname		="Takanobu Watanabe"
 set use_from		="yes"
 set envelope_from	="yes"
-set sendmail		="/usr/bin/msmtp"
+set sendmail		="/usr/bin/msmtp -a work"
 
 # Header Options -------------------------------------
 ignore *                                # ignore all headers
