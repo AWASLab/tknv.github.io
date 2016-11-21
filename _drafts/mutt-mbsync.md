@@ -67,6 +67,8 @@ Sync All
 # Save the synchronization state files in the relevant directory
 SyncState *
 
+https://dgl.cx/2009/03/html-mail-with-mutt-using-markdown
+
 .muttrc
 # vim: set filetype=muttrc:
 # Paths ----------------------------------------------
