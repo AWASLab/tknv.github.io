@@ -118,5 +118,5 @@ sudo apt-get install libssl-dev libffi-dev python-dev
 pip install cryptography
 ```
 
-
+[cover photo](https://flic.kr/p/MF7xQ1)
 
