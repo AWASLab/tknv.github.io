@@ -2,8 +2,11 @@
 layout: post
 title: "Coding on Windows, building on VirtualBox Linux. No workgroup no problem"
 date: 2016-10-18 01:20:33 +0700
+update_date: 2017-01-30 12:48:33 +0700
 author: tknv
-cover: 
+cover: /images/cover-coding-on-win.jpg
+width: 1280
+height: 947
 comments: true
 tags: 
 - linux
@@ -100,6 +103,13 @@ read only = no
 browsable = yes
 public = yes
 writable = yes
+```
+
+!!! warning 'This is very important for host is windows 7, otherwise file transfer is very slow.'
+
+```
+[global]
+max protocol = NT1
 ```
 
 apply configuration
