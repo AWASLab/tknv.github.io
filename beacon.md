@@ -12,7 +12,8 @@ Find SSID: AWASExtrmLab
 Pwd: awasawas
 ```
 
-Then
-[vtechd: https://awas.lab](https://awas.lab)<br>
+Then<br>
+*To enjoy vtechd*
+[https://awas.lab](https://awas.lab)<br>
 
 ## Enjoy
