@@ -1,6 +1,6 @@
 ---
 layout: page
-title: beacon
+title: welcome to AWASExtrmLab
 permalink: /beacon/
 tags: beacon
 ---
