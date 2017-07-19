@@ -2,7 +2,7 @@
 layout: post
 title: mutt and office365 on windows/Linux
 date: 2016-12-03 00:03
-update_date:
+update_date:  2017-07-19 16:20
 cover: /images/cover-mutt-mbsync.jpg
 width: 4192
 height: 3104
@@ -23,7 +23,7 @@ tags:
 - debian
 - notmuch
 - Xming
-description: Using mutt for office365 account email on windows(linux) putty.
+description: Using mutt for office365 account email on windows(linux) putty.  update .mbsyncrc (mbsync -v, isync 1.2.1)
 location: local
 locale:
 ---
@@ -114,13 +114,15 @@ encrypt password by pass with gpg. `pass insert mail/worg-gpg`.
 
 `vim ~/.mbsyncrc`
 
-```
+```diff
 IMAPAccount work
 Host localhost
 Port 1143
 User me@me.com
 PassCmd "pass mail/work-gpg"
-RequireSSL no
+- RequireSSL no
++ AuthMechs LOGIN
++ SSLType None
 
 IMAPStore work-remote
 Account work
