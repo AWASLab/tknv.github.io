@@ -19,4 +19,11 @@ Lab tools - [http://git.awas.lab](http://git.awas.lab)<br>
 
 Lab monitor - [http://awas.lab:3000](http://awas.lab:3000)<br>
 
+```
+user: guest
+Pwd: guest
+```
+
+
+
 ## Enjoy
