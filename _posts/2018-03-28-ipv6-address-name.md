@@ -4,8 +4,8 @@ title: IPv6 address name
 date: 2018-03-28 15:47
 update_date:
 cover: /images/cover-IPv6-address-name.jpg
-	width: 3120
-	height: 4160
+width: 3120
+height: 4160
 tags: 
 - ethernet 
 - ipv6 
@@ -74,9 +74,9 @@ face
 fade
 faff
 feed
-```
+``` 
 
-*It's inspired by ![Alec's Web Log](http://www.alecjacobson.com/weblog/?p=475)*
+It's inspired by [Alec's Web Log](http://www.alecjacobson.com/weblog/?p=475)
 
 ## code
 
@@ -101,5 +101,5 @@ with open(context, encoding='utf8', errors='ignore') as lines:
 
 `foo> python this-program.py words-file`
 
-![words-file](http://www.alecjacobson.com/weblog/media/list-of-english-words.txt)	
+[words-file](http://www.alecjacobson.com/weblog/media/list-of-english-words.txt)	
 
