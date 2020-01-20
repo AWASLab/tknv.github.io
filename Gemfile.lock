@@ -31,7 +31,7 @@ GEM
     execjs (2.7.0)
     faraday (0.14.0)
       multipart-post (>= 1.2, < 3)
-    ffi (1.9.23)
+    ffi (1.12.1)
     forwardable-extended (2.6.0)
     gemoji (3.0.0)
     github-pages (180)
@@ -118,6 +118,8 @@ GEM
       commonmarker (~> 0.17.6)
       jekyll-commonmark (~> 1)
       rouge (~> 2)
+    jekyll-compose (0.12.0)
+      jekyll (>= 3.7, < 5.0)
     jekyll-default-layout (0.1.4)
       jekyll (~> 3.0)
     jekyll-feed (0.9.3)
@@ -253,7 +255,9 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll
   jekyll-archives
+  jekyll-compose
   redcarpet!
 
 BUNDLED WITH
