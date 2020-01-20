@@ -47,19 +47,22 @@ facebook_appid: 352607461750023
 facebook_comments_number: 10
 
 # Social icons
-github_username:
-bitbucket_username:
+github_username: tknv
+reddit_username: rreedd
+bitbucket_username: tknv
 stackoverflow_id:
 twitter_username: tknv
 skype_username:
 steam_nickname:
 google_plus_id:
-linkedin_username:
+linkedin_username: tknv
 angellist_username:
 medium_id:
 bitcoin_url:
 paypal_url:
 flattr_button:
+telegram_username: tknv
+vk_id:
 
 # Post sharing icons
 show_sharing_icons: true
@@ -108,38 +111,21 @@ text:
   og_locale: 'en_US'
 
 # Build settings
-markdown: kramdown
-kramdown:
-  input: GFM
-  auto_ids: true
-  syntax_highlighter: rouge
+markdown:     kramdown
 redcarpet:
-  extensions: ['smart', 'tables', 'with_toc_data', 'fenced_code_blocks', 'footnotes']
+  extensions: ['smart', 'tables', 'with_toc_data']
 permalink:    pretty
-paginate:     5
+paginate:     4
 sass:
-  compressed: true
+  style: compressed
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-archives
 # https://github.com/jekyll/jekyll/issues/2938
-exclude: [vendor]
-
-jekyll-archives:
-  enabled:
-    - year
-    - month
-    # - tags
-  # layout: 'archive'
-  layouts:
-    year: year-archive
-    month: month-archive
-  #   # day: day-archive
-  #   tag: tag-archive-layout
-  permalinks:
-    year: '/:year/'
-    month: '/:year/:month/'
-  #   # day: '/:year/:month/:day/'
-  #   tag: '/tag/:name/'
-  #   # category: '/category/:name/'
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - README.md
+  - screenshot.png
+  - vendor

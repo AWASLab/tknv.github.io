@@ -45,6 +45,7 @@ task :draft, :title do |t, args|
   end
   mkdir_p "#{drafts_dir}"
   filename = "#{drafts_dir}/#{title.to_s.downcase.gsub(/[^\w]+/, '-')}.md"
+#  filename = "#{drafts_dir}/#{title.downcase.gsub(/[^\w]+/, '-')}.md"  
   puts "Creating new draft: #{filename}"
   File.open(filename, "w") do |f|
     f << <<-EOS.gsub(/^    /, '')
