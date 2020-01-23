@@ -1,29 +1,10 @@
 ---
 layout: page
-title: welcome to AWASExtrmLab
+title: welcome to AWASLab
 permalink: /beacon/
 tags: beacon
 ---
-# Welcome to AWASExtrmLab
+## Welcome to AWASLab
 
-### To enter AWAS Lab
-```
-SSID: AWASExtrmLab
-Pwd: awasawas
-```
-
-Then<br>
-*To enjoy Lab source, use DNS 172.16.1.254*<br>
-
-Lab tools - [http://git.awas.lab](http://git.awas.lab)<br>
-
-Lab monitor - [http://awas.lab:3000](http://awas.lab:3000)<br>
-
-```
-user: guest
-Pwd: guest
-```
-
-
-
-## Enjoy
+**We are sorry.**
+Currently shutdown for public.

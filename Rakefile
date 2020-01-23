@@ -20,10 +20,11 @@ task :post, :title do |t, args|
     date: #{Time.new.strftime('%Y-%m-%d %H:%M')}
     update_date:
     cover: /images/cover-#{title}.jpg
-	width:
-	height:
+    width:
+    height:
     tags:
     description:
+    summary:
     location: local
     locale:
     ---
@@ -55,10 +56,11 @@ task :draft, :title do |t, args|
     date: #{Time.new.strftime('%Y-%m-%d %H:%M')}
     update_date:
     cover: /images/cover-#{title}.jpg
-	width:
-	height:
+    width:
+    height:
     tags:
     description:
+    summary:
     location: local
     locale:
     ---

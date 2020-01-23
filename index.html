@@ -19,6 +19,8 @@ layout: default
           <span class="post-summary">
             {% if post.summary %}
               {{ post.summary }}
+            {% elsif post.description %}
+              {{ post.description }}
             {% else %}
               {{ post.excerpt }}
             {% endif %}
